@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "1111:5000"
+    volumes:
+      - "./src:/projects"
+    tty: true
+    stdin_open: true
+    command: flask run --host 0.0.0.0 --port 5000
+        
