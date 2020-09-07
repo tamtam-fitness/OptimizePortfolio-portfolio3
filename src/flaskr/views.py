@@ -84,7 +84,6 @@ def optimize_portfolio():
     for i in range(1, 4+1):
         read = request.args.get(f'read{i}', None, type=str)
         if read != "銘柄：未選択":
-            print(read,"zzzzzzzzzzzzzzzzzzzzzzzzzzz")
             read = read.split("：")[0]
             tickers.append(read)
 

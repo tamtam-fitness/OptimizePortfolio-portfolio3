@@ -75,7 +75,7 @@ class FetchData(object):
     def read_colections_length(cls, db_stacks): 
         """コレクションが何個あるか調べる関数"""
         length = 0
-        for stack in db_stacks.find():
+        for _ in db_stacks.find():
             length += 1  
         return length
 
@@ -180,10 +180,6 @@ class OptimizePortfolio(object):
     
     def optimize_portfolio(self):
         """ポートフォリオを最適化する関数"""
-        #変化率（リターン）の作成
-        returns = self.financial_data.pct_change()
-        #トレードした日で掛ける
-        cov_matrix_annual = returns.cov() * 252
         #平均リターンを求める
         #returns.mean() * 252
         mu = expected_returns.mean_historical_return(self.financial_data)
@@ -192,8 +188,6 @@ class OptimizePortfolio(object):
         S = risk_models.sample_cov(self.financial_data) 
         #効率的フロンティアの作成
         ef = EfficientFrontier(mu, S)
-        #Maximize the Sharpe ratio, and get the raw weights
-        weights = ef.max_sharpe() 
         cleaned_weights = ef.clean_weights() 
         weight_keys = ["未選択","未選択","未選択","未選択"]
         weight_values = ["ー","ー","ー","ー"]
