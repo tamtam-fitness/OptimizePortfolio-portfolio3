@@ -21,6 +21,7 @@ OptimizePortfolioは、東京証券取引所に登録されている約3600社�
 
 3.OptimizePortfolioので使用している技術一覧
 開発言語：Python, Bootstrap(HTML), CSS, jQuery(JavaScript)
+webサーバー:nginx
 フレームワーク：Flask 
 データベース：MongoDB
 インフラ：AWS(EC2, VPC), Docker(Dockerfile, docker-compose)
