@@ -188,6 +188,7 @@ class OptimizePortfolio(object):
         S = risk_models.sample_cov(self.financial_data) 
         #効率的フロンティアの作成
         ef = EfficientFrontier(mu, S)
+        weights = ef.min_volatility()
         cleaned_weights = ef.clean_weights() 
         weight_keys = ["未選択","未選択","未選択","未選択"]
         weight_values = ["ー","ー","ー","ー"]
