@@ -4,6 +4,7 @@ services:
   uwsgi:
     # ビルドするDockerfileのでディレクトリ相対パス
     build: ./app
+    container_name: opop-uwsg
     # 指定したパスをコンテナにマウントする。"ホストのパス:コンテナのパス"となる
     volumes:
       - ./app:/var/www/

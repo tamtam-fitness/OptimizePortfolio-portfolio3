@@ -1,6 +1,3 @@
-import glob
-import os
-
 from flask import (
     Blueprint,
     jsonify,
