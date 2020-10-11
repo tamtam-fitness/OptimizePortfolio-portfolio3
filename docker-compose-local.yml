@@ -12,7 +12,7 @@ services:
     restart: always
     environment:
       #前提としてホストファイルにDOMAINとIPアドレスを指定,  リダイレクト先のポートはコンテナのポート
-      DOMAINS: 'flask.localhost.com -> https://nginx:8080'
+      DOMAINS: 'flask.localhost.com -> https://nginx:80'
       STAGE: local
 
   uwsgi:
@@ -41,8 +41,6 @@ services:
       - /tmp/nginx_log:/var/log/nginx
     networks: 
       - opop
-    ports:
-      - "8080:8080"
     environment:
       TZ: "Asia/Tokyo"
 

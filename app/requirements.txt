@@ -6,3 +6,4 @@ pyportfolioopt==1.2.4
 dnspython==2.0.0
 pandas==1.1.1
 uwsgi==2.0.19.1
+

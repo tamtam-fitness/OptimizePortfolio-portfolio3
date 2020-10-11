@@ -1,17 +1,8 @@
-from flaskr import models
+from flaskr import models_bundle
 
 #土日の間で週1回で株価のデータを更新
 if __name__ == '__main__':
-    count = models.FetchData.read_count()
-    flag = "y"
-    #全企業を更新するか判定
-    if count == 0 :
-        flag = input("If you want to update stock_data ? [y/n] :")
-    if flag == "y":
-        models.FetchData.write_count(count)
-        models.FetchData.fetched_data_to_mongo()
-    else:
-        print("操作を終了します。")
+    models_bundle.update_stock()
 
 """
 <<<MongoDBの基本操作>>>
