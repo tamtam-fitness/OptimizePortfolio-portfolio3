@@ -60,7 +60,7 @@ def send_views_result_search_stock(type_in: str) -> dict:
     return search_result
 
 
-def send_views_msg_could_search_or_not(read_li: list, stock_code: dict) -> dict:
+def send_views_msg_could_search_or_not(read_li: list, stock_code: str) -> dict:
 
     query_msg = {"msg":"Nan"}
 

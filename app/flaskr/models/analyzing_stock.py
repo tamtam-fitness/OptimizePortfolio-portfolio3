@@ -13,7 +13,7 @@ from . import db
 class AnalyzingPortfolio(ABC):
     #複数銘柄のポートフォリオの投資比率を最適化するクラス
     
-    def __init__(self, tickers):
+    def __init__(self, tickers: list) -> None:
 
         """MongoDBから株価を取得しデータフレームを作成"""
         db_stacks = db.stacks
@@ -40,7 +40,7 @@ class AnalyzingPortfolio(ABC):
 
 class PlottingStockPrice(AnalyzingPortfolio):
 
-    def operate(self):
+    def operate(self) -> None:
         """株価をプロットする関数"""
         name = ""
         for i in self.tickers:
@@ -59,7 +59,7 @@ class PlottingStockPrice(AnalyzingPortfolio):
     
 
 class OptimizingPortfolio(AnalyzingPortfolio):  
-    def operate(self):
+    def operate(self) -> tuple:
         """ポートフォリオを最適化する関数"""
         #平均リターンを求める
         #returns.mean() * 252
