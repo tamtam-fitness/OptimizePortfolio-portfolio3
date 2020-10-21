@@ -24,5 +24,5 @@ OptimizePortfolioは、東京証券取引所に登録されている約3600社�
 webサーバー:nginx
 フレームワーク：Flask 
 データベース：MongoDB
-インフラ：AWS(EC2, VPC), Docker(Dockerfile, docker-compose)
+インフラ：AWS(Fargate, VPC, ECR, ALB), Docker(Dockerfile, docker-compose), CircleCI
 
