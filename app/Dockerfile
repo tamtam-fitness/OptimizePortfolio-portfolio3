@@ -8,7 +8,8 @@ WORKDIR /var/www
 COPY requirements.txt ./
 
 # 依存Pythonライブラリインストール
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
 COPY . /var/www/ 
 

@@ -8,7 +8,7 @@ from pypfopt.efficient_frontier import EfficientFrontier
 from pypfopt import expected_returns
 from pypfopt import risk_models
 
-from . import db     
+from . import db  
 
 class AnalyzingPortfolio(ABC):
     #複数銘柄のポートフォリオの投資比率を最適化するクラス

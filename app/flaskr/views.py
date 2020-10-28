@@ -10,6 +10,7 @@ from . import models_bundle
 #ルーティングの作成
 bp = Blueprint('app', __name__, url_prefix='')
 
+
 @bp.route('/')
 def index():
     """index.htmlの生成する関数"""
