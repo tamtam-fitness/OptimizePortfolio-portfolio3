@@ -27,6 +27,4 @@ OptimizePortfolioは、東京証券取引所に登録されている約3600社�
 - インフラ：AWS(Fargate, VPC, ECR, ALB), Docker(Dockerfile, docker-compose)
 - その他：データ分析系ライブラリ各種使用, Models部分の一部のテスト作成
 
-## 4.ローカル環境で使用する場合
-- nginxフォルダ内のDockerfileーlocalを修正
-- appフォルダ内のDockerfileーlocalを修正
+![infra](https://opop-img.s3.us-east-2.amazonaws.com/OptimizePortfolio_infra.png) 
