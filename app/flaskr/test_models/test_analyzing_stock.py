@@ -1,12 +1,6 @@
 from models.analyzing_stock import PlottingStockPrice, OptimizingPortfolio
 
 
-def test_PlottingStockPrice():
-    tickers = ["4755", "3938"]
-    plotting_stock_price = PlottingStockPrice(tickers)
-    plotting_stock_price.operate() 
-    assert True
-
 def test_OptimizingPortfolio():
     tickers = ["4755", "3938"]
     optimizing_portfolio = OptimizingPortfolio(tickers)
