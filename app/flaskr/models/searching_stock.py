@@ -1,10 +1,14 @@
 from . import stock_df
 
+from typing import Union
+
+import pandas as pd
+
 class UserSearchStock(object):
     #土日（証券市場）が閉まっている時に、一週間毎にDの株価を更新するクラス
 
     @staticmethod
-    def search_stock(type_in: str):
+    def search_stock(type_in: str) -> Union[pd.DataFrame, str]:
         """銘柄が存在するか判定する関数"""
         if type_in == "" :
             return "銘柄コードもしくは会社名を入力してください。"

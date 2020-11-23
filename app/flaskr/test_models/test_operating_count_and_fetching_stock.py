@@ -6,4 +6,4 @@ def test_OperatingCountAndFetchingStock():
     fetching_stock = FetchingStock()
     operating_count_and_fetching_stock = OperatingCountAndFetchingStock(reading_and_writing_count, fetching_stock)
     stacks = operating_count_and_fetching_stock.fetch_stock_and_operate_count()
-    assert type(stacks) is list
+    assert isinstance(stacks, list)

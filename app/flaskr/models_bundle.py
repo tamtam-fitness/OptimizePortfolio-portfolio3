@@ -50,7 +50,7 @@ def send_views_result_search_stock(type_in: str) -> dict:
         'search_result5':""
     }
 
-    if  type(search_company) is str :
+    if isinstance(search_company, str):
         search_result['search_result1'] = search_company
     else :    
         for i in range(0, len(search_company)):
