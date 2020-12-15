@@ -32,6 +32,7 @@ OptimizePortfolioは、東京証券取引所に登録されている約3600社�
 ![infra](https://opop-img.s3.us-east-2.amazonaws.com/OptimizePortfolio_infra.png) 
 
 ## 使用デモ
-[![Image from Gyazo](https://i.gyazo.com/a12d388e327ec47b6bd9340e6cab7f92.gif)](https://gyazo.com/a12d388e327ec47b6bd9340e6cab7f92)
-
+銘柄を入力
 [![Image from Gyazo](https://i.gyazo.com/7a64be0b95d511d603196870f6a81437.gif)](https://gyazo.com/7a64be0b95d511d603196870f6a81437)
+最適比率を出力
+[![Image from Gyazo](https://i.gyazo.com/a12d388e327ec47b6bd9340e6cab7f92.gif)](https://gyazo.com/a12d388e327ec47b6bd9340e6cab7f92)
