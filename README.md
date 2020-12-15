@@ -1,4 +1,6 @@
-﻿# 【OptimizePortfolioについての紹介】
+# 【OptimizePortfolioについての紹介】
+
+※現在AWSの料金の問題で停止させています、起動の(ご要望)[https://densuke.work/#Contact]があれば対応します。
 
 ### もくじ
 - 1.OptimizePortfolioの概要
